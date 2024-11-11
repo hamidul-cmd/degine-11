@@ -1,0 +1,1448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+:root {
+    --primarecolor: #c2efd4;
+    --seccolor: #6bc785;
+    --divcolor1: #93b9a2;
+    --divcolor2: #cadcd0;
+    --secdivcolor1: #e7e7ef;
+    --secdivcolor2: #eaebf0;
+    --secdivcolor3: #f2f3f5;
+    --fontcolor: #224f34;
+    --secfontcolor: #6bc785;
+
+}
+
+/* hero part stert  */
+.hero {
+    height: 100vh;
+    background-color: var(--primarecolor);
+
+}
+
+.nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.nav h1 {
+    font-size: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--fontcolor);
+}
+
+.nav .manu {
+    margin-right: -25vw;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.nav .manu a {
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 600;
+    color: var(--fontcolor);
+
+}
+
+.nav .manu a:hover {
+    border-bottom: 2px solid var(--fontcolor);
+}
+
+.nav .manubtn {
+    display: none;
+}
+
+.nav .nav-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 10vw;
+    height: 5vh;
+    align-items: flex-end;
+}
+
+.nav .nav-btn i {
+    font-size: 2vw;
+    font-weight: 400;
+    color: var(--fontcolor);
+    cursor: pointer;
+}
+
+.nav .nav-btn button {
+    height: 90%;
+    width: 6vw;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid var(--fontcolor);
+    cursor: pointer;
+}
+
+.nav .nav-btn button a {
+    text-decoration: none;
+    color: var(--fontcolor);
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.container {
+    height: 75%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 14.2vw;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+}
+
+.left h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5vw;
+    color: var(--fontcolor);
+}
+
+.left P {
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 2vw;
+    padding-right: 15vw;
+    color: var(--secfontcolor);
+}
+
+.left button {
+    height: 3vw;
+    width: 12vw;
+    background-color: var(--fontcolor);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 20px 20px 100px -10px black;
+    margin-top: 5vh;
+}
+
+.left button a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 600;
+}
+
+
+.right {
+    height: 100%;
+    width: 40%;
+    background-color: green;
+    border-end-end-radius: 150px;
+    border-top-left-radius: 150px;
+    border-end-start-radius: 90px;
+    border-top-right-radius: 60px;
+    background-image: url(Mask\ group.png);
+}
+
+.right .img1 {
+    position: absolute;
+    bottom: 120px;
+    margin-left: 2vw;
+}
+
+.right .img2 {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+}
+
+.secendhero {
+    height: 120vh;
+    /* background-color: red; */
+}
+
+.secendhero h1 {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 10vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--fontcolor);
+    letter-spacing: 3px;
+}
+
+.secendhero p {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--fontcolor);
+    letter-spacing: 1px;
+}
+
+.secendhero .main-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0vw 14.2vw;
+    height: 50%;
+    margin-top: 10vh;
+    gap: 3vw;
+}
+
+.item .img {
+    height: 80%;
+    width: 100%;
+    background-color: var(--divcolor1);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.item h2 {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.item button {
+    height: 5vh;
+    width: 10vw;
+    background-color: transparent;
+    border: navajowhite;
+    font-size: 1vw;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.item .btn1 {
+    border-right: 1px solid black;
+}
+
+.item .btn2 i {
+    color: yellow;
+
+}
+
+.item2 .img2 {
+    background-color: var(--primarecolor);
+}
+
+.item .img img {
+    filter: drop-shadow(20px 2px 130px black);
+}
+
+.item3 .img3 {
+    background-color: var(--divcolor2);
+}
+
+.see {
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+}
+
+.see button {
+    width: 10vw;
+    background-color: transparent;
+    border: 2px solid var(--fontcolor);
+    border-radius: 5px;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: var(--fontcolor);
+    cursor: pointer;
+}
+
+.see button i {
+    margin-left: 1vw;
+}
+
+.thirdhero {
+    height: 120vh;
+    /* background-color: gray; */
+}
+
+.thirdhero h1 {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 4vw;
+    font-weight: 500;
+    color: var(--fontcolor);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.thirdhero .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    gap: 6vw;
+}
+
+.thirdhero .option a {
+    text-decoration: none;
+    font-size: 1VW;
+    font-weight: 500;
+    color: black;
+    font-family: sans-serif;
+}
+
+.thirdhero .option a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5vw 5vw;
+    gap: 2vw;
+}
+
+.product .box h2 {
+    font-size: 1vw;
+    text-align: center;
+}
+
+.product .box button {
+    margin-top: 1vh;
+    height: 5vh;
+    width: 7vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2vh;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.product .box .btn1 {
+    margin-left: 2vw;
+    border-right: 1px solid gray;
+}
+
+.product .box .btn2 i {
+    color: yellow;
+    margin-left: 7px;
+}
+
+.product .box2 .img {
+    background-color: var(--secdivcolor2);
+    height: 37vh;
+    width: 30vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product .box1 .img1 {
+    height: 37vh;
+    overflow: hidden;
+    width: 30vh;
+    border-radius: 10px;
+}
+
+.forthhero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0vw 2vw;
+}
+
+.secend-container {
+    height: 65%;
+    width: 90%;
+    background-color: var(--primarecolor);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 {
+    width: 50%;
+    overflow: hidden;
+}
+
+.section1 img {
+    margin-top: -120vh;
+    margin-left: 5vw;
+    margin-bottom: 50vh;
+}
+
+.section1-img3 {
+    height: 20vh;
+    width: 20vh;
+    background-color: #d0f5df;
+    margin-top: 42vh;
+    margin-left: 6.5vw;
+    margin-bottom: -10vh;
+}
+
+.section1-img2 {
+    margin-top: 59vh;
+    margin-left: -2vw;
+}
+
+.forthhero .section2 {
+    width: 50%;
+    padding: 6vh 0vh;
+}
+
+.forthhero .section2 h1 {
+    font-size: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--fontcolor);
+}
+
+.forthhero .section2 p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: var(--fontcolor);
+    padding-right: 10vw;
+    margin-top: 3vh;
+}
+
+.forthhero .section2 .forthhero-container {
+    display: flex;
+    gap: 2.5vw;
+    margin-top: 3vh;
+}
+
+.forthhero .section2 .forthhero-container .days {
+    background-color: white;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forthhero .section2 .forthhero-container .days h1 {
+    font-size: 2.5vw;
+    color: var(--fontcolor);
+}
+
+.forthhero .section2 .forthhero-container .days h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--fontcolor);
+
+}
+
+.forthhero .section2 .forthher-btn {
+    margin-top: 3vh;
+    width: 12.5vw;
+    height: 7vh;
+    background-color: var(--fontcolor);
+    border: none;
+    border-radius: 5px;
+    font-size: 3vh;
+    font-weight: 400;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.hero-five {
+    height: 100vh;
+    width: 90vw;
+}
+
+.hero-five h1 {
+    text-align: center;
+    font-size: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color: var(--fontcolor);
+
+}
+
+.hero-five p {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 1.2vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--fontcolor);
+
+}
+
+.foto {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 0vw 10vw;
+    margin-top: 10vh;
+}
+
+.foto .Accessories {
+    height: 90%;
+    width: 23.5%;
+}
+
+.Accessories-img {
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Accessories-img1 {
+    background-color: #d3e2d7;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Accessories-img1 img {
+    height: 51vh;
+}
+
+.Accessories-img2 img,
+.Accessories-img3 img {
+    height: 51vh;
+}
+
+.Accessories h1 {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.Accessories p {
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 0vw 1vw;
+}
+
+footer {
+    height: 60vh;
+    background-color: var(--fontcolor);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    gap: 15vw;
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--primarecolor);
+    font-size: 2vh;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 2vh;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: white;
+}
+
+ul li h1,
+.email h1 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ul-1 h1 {
+    font-size: 3vw;
+    margin-top: -3vh;
+}
+
+.ul-1 li p {
+    font-size: 1.5vw;
+    color: white;
+    margin-top: 1vh;
+}
+.ul-1 li .logo i {
+    font-size: 3vw;
+    color: var(--primarecolor);
+    font-weight: 400;
+    cursor: pointer;
+}
+.ul-1 li .logo {
+    margin-top: 2vh;
+}
+
+
+.ul-2,
+.ul-3 {
+    font-size: 1.4vh;
+    font-weight: 400;
+}
+
+.email {
+    width: 10vw;
+    height: 5vh;
+}
+
+.email h1 {
+    margin-top: -8vh;
+    font-size: 3vh;
+}
+
+.email .submit {
+    margin-top: 4.5vh;
+    height: 5vh;
+    display: flex;
+    width: 30%;
+}
+
+#maill {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--primarecolor);
+    font-size: 1.2vw;
+    color: white;
+    padding-left: 1vw;
+}
+
+.submit button {
+    width: 8vw;
+    background-color: var(--primarecolor);
+    border: none;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: var(--fontcolor);
+    padding: 0vw 1vw;
+    cursor: pointer;
+}
+.bottom {
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+.bottom .line {
+    width: 70vw;
+    height: 3px;
+    background-color: var(--primarecolor);
+    border-radius: 20%;
+    margin-left: 10vw;
+}
+.bottom a {
+    margin-left: 2vw;
+    text-decoration: none;
+    color: white;
+    font-size: 2.4vh;
+    font-weight: 600;
+}
+
+
+
+@media (max-width:1279px) {
+    .nav {
+        height: 70px;
+
+    }
+
+    .nav h1 {
+        font-size: 4vw;
+        letter-spacing: 2px;
+    }
+
+    .nav .manu {
+        margin-right: -20vw;
+    }
+
+    .nav .manu a {
+        font-size: 1.2vw;
+        letter-spacing: 1px;
+    }
+
+    .nav .nav-btn {
+        gap: 2vw;
+        width: 15vw;
+    }
+
+    .nav .nav-btn button {
+        width: 20vw;
+    }
+
+    .nav .nav-btn button a {
+        font-size: 1.5vw;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    .container {
+        padding: 0vw 3vw;
+    }
+
+    .left h1 {
+        margin-top: 5vh;
+    }
+
+    .left p {
+        font-size: 2vw;
+        line-height: 4vh;
+        font-weight: 500;
+
+    }
+
+    .right .img2 {
+        display: none;
+    }
+
+    .secendhero .main-items {
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
+    .secendhero .main-items {
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+    .item button {
+        font-size: 2vh;
+
+    }
+
+    .item .btn1 {
+        margin-left: 10vh;
+    }
+
+    .secendhero {
+        height: 200vh;
+    }
+
+    .see {
+        margin-top: 55vh;
+    }
+
+    .see button {
+        width: 15vw;
+        margin-top: 60vh;
+        height: 10vh;
+        width: 15vw;
+    }
+
+    .product {
+        grid-template-columns: 0.9fr 1fr 1fr;
+        gap: 0vw;
+    }
+
+    .product .box h2 {
+        font-size: 2.5vh;
+    }
+
+    .product .box .img {
+        height: 57vh;
+        width: 20vw;
+    }
+
+    .product .box .img img {
+        margin-left: -4vw;
+    }
+
+    .thirdhero .option a {
+        font-size: 2vh;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .thirdhero h1 {
+        font-size: 8vh;
+    }
+
+    .thirdhero {
+        height: 155vh;
+        margin-top: 61vh;
+    }
+
+    .secend-container {
+        width: 100%;
+    }
+
+    .foto .Accessories {
+        width: 40vw;
+    }
+
+    .Accessories h1 {
+        font-size: 4vh;
+    }
+
+    .Accessories p {
+        font-size: 1.5vw;
+    }
+
+    .hero-five h1 {
+        font-size: 4vw;
+    }
+
+    .hero-five p {
+        font-size: 1.7vw;
+    }
+
+    .forthhero {
+        margin-top: 70vh;
+    }
+
+    .hero-five {
+        width: 100vw;
+    }
+    footer {
+        margin-top: 30vh;
+        padding: 0vw 5vw;
+    }
+.email {
+    margin-right: 5vw;
+}
+}
+
+@media (max-width:1000px) {
+    .nav .manu {
+        display: none;
+
+    }
+
+    .nav .manubtn {
+        display: block;
+        margin-right: -35vw;
+        font-size: 3vw;
+        font-weight: 700;
+        color: var(--fontcolor);
+        cursor: pointer;
+    }
+
+    .nav .nav-btn i {
+        font-size: 4vw;
+    }
+
+    .nav .nav-btn button {
+        width: 30vw;
+    }
+
+    .nav .nav-btn button a {
+        font-size: 1.8vw;
+    }
+
+    .hero {
+        height: 200vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        align-items: center;
+        padding: 0vw 10vw;
+    }
+
+    .left {
+        width: 100%;
+
+    }
+
+    .left h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    .left p {
+        text-align: center;
+        padding-right: 0vw;
+        font-size: 2.5vw;
+        margin-top: 2vh;
+    }
+
+    .left button {
+        margin-left: 30vw;
+        height: 6vh;
+        width: 20vw;
+    }
+
+    .left button a {
+        font-size: 2.2vw;
+        text-align: center;
+    }
+
+    .right {
+        width: 70%;
+        height: 250%;
+    }
+
+    .right .img1 {
+        top: 110vh;
+    }
+
+    .right .img2 {
+        display: block;
+        top: 90vh;
+        margin-right: -5vw;
+    }
+
+    .secendhero {
+        height: 270vh;
+    }
+
+    .secendhero .main-items {
+        grid-template-columns: 0.5fr;
+        margin-left: 15vw;
+    }
+
+    .secendhero h1 {
+        font-size: 7vh;
+
+    }
+
+    .secendhero p {
+        font-size: 2.5vh;
+    }
+
+    .see {
+        margin-top: 100vh;
+    }
+
+    .see button {
+        margin-top: 77vh;
+    }
+
+    .thirdhero {
+        margin-top: 84vh;
+    }
+
+    .product .box2 .img {
+        width: 35vh;
+    }
+
+    .forthhero .section2 .forthhero-container .days {
+        height: 13vh;
+        width: 10vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days h1 {
+        font-size: 4vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days h3 {
+        font-size: 2.5vw;
+    }
+
+    .forthhero .section2 .forthher-btn {
+        width: 20vw;
+        margin-top: 2vh;
+    }
+
+    .forthhero .section2 h1 {
+        font-size: 5vw
+    }
+
+    .forthhero .section2 p {
+        font-size: 2.3vw;
+    }
+    footer {
+        padding: 0vw 15vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .top {
+        gap: 5vw;
+        width: 75vw;
+        justify-content: space-between;
+    }
+    .ul-1 h1 {
+        margin-top: -10vh;
+    }
+    .ul-1 li p {
+        font-size: 2.3vw;
+    }
+    .bottom .line {
+        margin-left: 5vw;
+    }
+    ul li h1, .email h1 {
+        font-size: 3vw;
+    }
+    .email {
+        height: 20vh;
+        width: 21vw;
+        margin-right: 0;
+        margin-top: 14vh;
+    }
+    .email h1 {
+        margin-top: -11vh;
+    }
+    .link a {
+        font-size: 3vh;
+    }
+    .ul-1 li .logo i {
+        font-size: 4vw;
+    }
+    .bottom a {
+        font-size: 2.7vh;
+    }
+}
+
+@media (max-width:800px) {
+    .nav {
+        justify-content: space-between;
+        padding: 0vw 5vw;
+    }
+
+    .nav .manubtn {
+        margin-right: -45vw;
+        margin-top: 1.8vh;
+    }
+
+    .nav .nav-btn {
+        width: 30vw;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .nav .nav-btn button {
+        width: 15vw;
+        align-items: center;
+    }
+
+    .nav .nav-btn button a {
+        font-size: 2.5vw;
+        font-weight: 700
+    }
+
+    .nav h1 {
+        font-size: 6vw;
+    }
+
+    .nav {
+        height: 60px;
+        align-items: center;
+    }
+
+    .right {
+        width: 90%;
+        background-repeat: no-repeat;
+    }
+
+    .right .img2 {
+        margin-right: -20vw;
+    }
+
+    .secendhero .main-items {
+        margin-left: 10vw;
+    }
+
+    .secendhero p {
+        padding: 0vw 10vw;
+    }
+
+    .secendhero {
+        width: 90vw;
+        height: 270vh;
+    }
+
+    .see {
+        margin-top: 100vh;
+    }
+
+    .see button {
+        width: 30vw;
+        margin-left: 10vw;
+    }
+
+    .product {
+        grid-template-columns: 0.9fr 1fr;
+    }
+
+    .product .box button {
+        width: 10vw;
+        height: 3vh;
+    }
+
+    .product .box .img1 {
+        width: 29vw;
+    }
+
+    .thirdhero {
+        height: 230vh;
+    }
+
+    .forthhero {
+        padding: 0;
+    }
+
+    .secend-container {
+        flex-direction: column;
+        height: 146vh;
+        margin-top: 15vh;
+    }
+
+    .forthhero .section1 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .forthhero .section1 .section1-img3 {
+        margin-left: 34vw;
+        margin-top: 45vh;
+    }
+
+    .forthhero .section1 .section1-img2 {
+        margin-left: -3vw;
+    }
+
+    .forthhero .section1 img {
+        margin-left: 30vw;
+
+    }
+
+    .forthhero .section1 {
+        border-bottom: 8px solid var(--fontcolor);
+    }
+
+    .forthhero .section2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forthhero .section2 p {
+        text-align: center;
+        padding-right: 0;
+        font-size: 3.5vw;
+    }
+
+    .forthhero .section2 h1 {
+        font-size: 7vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days {
+        width: 15vw;
+        height: 12vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .forthhero .section2 .forthhero-container .days h1 {
+        font-size: 6vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days h3 {
+        font-size: 3.5vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days {
+        width: 25vw;
+        font-size: 4.5vw;
+        letter-spacing: 2px;
+        height: 15vh;
+    }
+
+    .hero-five {
+        margin-top: 40vh;
+        height: 300vh;
+    }
+
+    .foto {
+        flex-direction: column;
+        margin-top: 15vh;
+        height: 250vh;
+    }
+
+    .Accessories-img {
+        background-color: #e7e8ea;
+        height: 57vh;
+    }
+
+    .Accessories-img2 img,
+    .Accessories-img3 img {
+        height: 57vh;
+        width: 48vh;
+    }
+
+    .Accessories-img1 img {
+        height: 57vh;
+    }
+
+    .hero-five p {
+        font-size: 2vw;
+        font-weight: 600;
+        padding: 0vw 15vw;
+        font-size: 2.5vw;
+    }
+
+    .hero-five h1 {
+        font-size: 5vw;
+    }
+
+    .Accessories p {
+        padding: 0;
+    }
+    .bottom {
+        width: 90vw;
+    }
+}
+
+
+
+@media (max-width:500px) {
+    .hero {
+        height: 140vh;
+    }
+
+    .nav h1 {
+        font-size: 9vw;
+    }
+
+    .nav .manubtn {
+        margin-right: -30vw;
+    }
+
+    .nav .nav-btn i {
+        font-size: 7vw;
+    }
+
+    .nav .nav-btn {
+        width: 40vw;
+    }
+
+    .nav .nav-btn button {
+        width: 20vw;
+        height: 4vh;
+    }
+
+    .nav .nav-btn button a {
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+
+    .container {
+        padding: 0vw 5vw;
+    }
+
+    .left h1 {
+        margin-top: 0vh;
+        font-size: 5vh;
+    }
+
+    .left p {
+        font-size: 2.5vh;
+    }
+
+    .left button {
+        width: 50vw;
+        margin-left: 22vw;
+
+    }
+
+    .left button a {
+        font-size: 2.5vh;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right .img1 {
+        top: 102vh;
+        margin-left: 3vh;
+    }
+
+    .right .img2 {
+        display: none;
+    }
+
+    .secendhero .main-items {
+        margin-left: -7vw;
+    }
+
+    .item button {
+        width: 30vw;
+    }
+
+    .item .btn1 {
+        margin-left: 15vw;
+    }
+
+    .secend-container {
+        margin-top: 195vh;
+    }
+
+    .secendhero h1 {
+        margin-left: 10vw;
+    }
+
+    .secendhero p {
+        margin-left: 5vw;
+    }
+
+    .secendhero {
+        height: 270vh;
+    }
+
+    .see {
+        margin-top: 90vh;
+        justify-content: center;
+    }
+
+    .see button {
+        width: 40vw;
+    }
+
+    .product {
+        grid-template-columns: 1fr;
+        margin: 15vw 0vw;
+    }
+
+    .product .box button {
+        width: 25vw;
+    }
+
+    .thirdhero .option {
+        flex-direction: column;
+    }
+
+    .thirdhero {
+        height: 420vh;
+    }
+
+    .thirdhero h1 {
+        font-size: 7vh;
+    }
+
+    .forthhero .section1 .section1-img3 {
+        margin-left: 20vw;
+    }
+
+    .forthhero .section1 .section1-img2 {
+        margin-left: -3vw;
+    }
+
+    .forthhero .section1 img {
+        margin-left: 12vw;
+
+    }
+
+    .forthhero .section2 h1 {
+        font-size: 10vw;
+    }
+
+    .forthhero .section2 p {
+        font-size: 5vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days {
+        width: 20vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days h1 {
+        font-size: 9vw;
+    }
+
+    .forthhero .section2 .forthhero-container .days h3 {
+        font-size: 5vw;
+    }
+
+    .forthhero .section2 .forthher-btn {
+        width: 50vw;
+        height: 8vh;
+    }
+
+    .hero-five {
+        margin-top: 125vh;
+    }
+
+    .hero-five p {
+        font-size: 5vw;
+    }
+
+    .hero-five h1 {
+        font-size: 8vw;
+    }
+
+    .Accessories-img {
+        width: 80vw;
+        margin-left: -20vw;
+    }
+
+    .foto {
+        width: 100vw;
+        margin-top: 50vh;
+    }
+
+    .item .img {
+        width: 80%;
+    }
+
+    .item .img img {
+        margin-left: -10vw;
+    }
+
+    .product .box1 .img1 {
+        width: 70vw;
+    }
+
+    .product .box2 .img {
+        width: 70vw;
+    }
+    .hero-five {
+        height: 352vh;
+    }
+    footer {
+        height: 120vh;
+    }
+    .top {
+        margin-top: 17vh;
+        flex-wrap: wrap;
+    }
+    ul li h1, .email h1 {
+        text-align: center;
+        font-size: 5vh;
+    }
+    .ul-1 h1 {
+        font-size: 7vh;
+    }
+    .ul-1 li p {
+       font-size: 3vh;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .ul-1 li .logo i {
+        font-size: 5vh;
+    }
+    .link a {
+        text-align: center;
+    }
+
+}
